@@ -1,0 +1,1161 @@
+$paste: #95e1d3;
+$onion: #ef8b8a;
+$white: #fff;
+$section-background: #f8f8f8;
+$grey: #9b9a9a;
+$yellow: #fce38a;
+$lite-black: #1f1f1f;
+
+html, body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+p{
+    font-size: 15px;
+    margin-bottom: 0;
+    font-family: 'Roboto', sans-serif;
+    color: $grey;
+}
+.section-title{
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: $lite-black;
+    margin-bottom: 0;
+}
+.signature-title{
+    font-size: 24px;
+    font-family: 'Kaushan Script', cursive;
+    margin-bottom: 20px;
+    color: $lite-black;
+}
+.line, .image-line, .quote-line{
+    width: 62px;
+    height: 3px;
+    background: $onion;
+}
+.thin-card-title{
+    color: $lite-black;
+    text-transform: uppercase;
+    font-weight: 400 !important;
+    font-family: 'Montserrat', sans-serif;
+}
+.roboto-italic{
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-size: 15px;
+    color: $grey;
+    font-weight: 300;
+}
+a{
+    color: $lite-black;
+}
+a:hover{
+    text-decoration: none;
+    color: $lite-black;
+}
+.bgcolor.scrolled {
+    background: -webkit-gradient(linear, left top, right top, color-stop(19%, #de4882), to(#e8785d));
+    background: linear-gradient(90deg, #de4882 19%, #e8785d 100%);
+    opacity: 1;
+  }
+header{
+    background: linear-gradient(0deg, rgba(247, 222, 141, 0.9) 27%, rgba(232, 129, 131, 0.9) 68%),url('../images/banner.jpg')  no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    nav{
+        padding-top: 30px;
+        .logo{
+            font-size: 30px;
+            font-weight: bold;
+        }
+        li a{
+            padding: 0 0 5px 0 !important;
+            margin: 0 !important;
+            font-family: 'Montserrat', sans-serif;
+        }
+        li{
+            margin-right: 50px;
+            margin-top: 20px;
+        }
+        a{
+            color: #fff !important;
+            font-size: 14px;
+        }
+        li a.active{
+            border-bottom: 3px solid $yellow;
+            color: $yellow !important;
+        }
+        li button{
+            margin-top: 0px;
+            border: none !important;
+            background: transparent;
+            border: none;
+            color: $white;
+            margin: -10px 0 0 -10px;
+            i{
+                color: $white !important;
+            }
+        }
+        li .button.active{
+            border: none;
+        }
+        li .input{
+            width: 0px;
+            height: 0px;
+            transition: 0.25s ease-in-out all;
+            background: transparent;
+            border: none;
+            margin-top: 1px;
+           // margin-right: -12px;
+        }
+        li .input-open{
+            margin-top: 3px;
+            border-radius: 20px;
+            border: 2px solid $yellow;
+            outline: none;
+            background: transparent;
+            padding: 3px 15px;
+            color: $white;
+            width: 200px;
+            height: 30px;
+        }
+    }
+    .banner{
+        h1, h4{
+            color: #fff;
+        }
+        padding: 150px 0 220px;
+        h1{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 150px;
+            padding: 0;
+            line-height: 140px;
+            margin-top: 0;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        h4{
+            margin-bottom: 30px;
+            font-family: 'Kaushan Script', cursive;
+            font-size: 72px;
+        }
+        .line{
+            width: 62px;
+            height: 2px;
+            background: #fff;
+            margin: 60px auto 50px;
+        }
+        button{
+            background: transparent;
+            border: 2px solid #fff;
+            padding: 8px 30px;
+            a{
+                color: #fff;
+                font-size: 14px;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+.about-section, .team-section{
+    padding: 100px 0;
+    .upper-portion{
+        padding: 0 110px;
+        margin-bottom: 80px;
+        p{
+            margin-bottom: 0;
+        }
+    }
+    .line{
+        margin: 40px auto;
+    }
+    .card{
+        position: relative;  
+        border: none;
+        border-radius: 0;
+        .hover-text{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            opacity: 0;
+            transform: translate(-50%, -50%);
+            i, p{
+                color: #fff;
+                font-size: 18px;
+            }
+            p{
+                text-transform: uppercase;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: bold;
+            }
+        }      
+    }
+   
+    .card:hover{
+        box-shadow: 10px 10px 0px $paste;
+        background: linear-gradient(0deg, rgba(238,215,138,0.9) 27%, rgba(232,129,131,0.9) 58%);
+        transform: translateY(-10px);
+        cursor: pointer;
+        img{
+            opacity: 0.1;
+        }
+        .hover-text{
+            opacity: 1;
+        }
+    }
+}
+
+.counter-section{
+    background: $paste;
+    padding: 80px 0;
+    h2, p{
+        color: $white;
+    }
+    .border-col{
+        border: 1px solid #b5eae0;
+        border-top: none;
+        border-bottom: none;
+    }
+
+    h2{
+        font-size: 72px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+    }
+    p{
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+}
+
+.service-section{
+    padding: 100px 0 50px;
+    .line{
+        margin: 40px auto 60px;
+    }
+    .content{
+        .per-content{
+            margin: 50px 0;
+        }
+        .thin-line{
+            height: 1px;
+            width: 100%;
+            background: #e5e5e5;
+        }
+        h5{
+            margin-bottom: 0;
+            text-transform: uppercase;
+            font-weight: 400;
+            font-size: 14px;
+        }
+        p{
+            margin-top: 20px;
+        }
+        i, svg{
+            color: $paste;
+            font-size: 35px;
+        }
+    }
+}
+
+.quote-section, .testimonial-quote-section{
+    background: $section-background;
+    padding: 60px 0;
+    .content{
+        padding: 0 65px 0;
+        .box{
+            width: 145px;
+            height: 150px;
+            line-height: 160px;
+            text-align: center;
+            border: 2px solid $paste;
+            i{
+                color: $paste;
+                font-size: 65px;
+            }
+        }
+        .text{
+            p{
+                font-size: 24px;
+                font-family: 'Roboto', sans-serif;
+                font-style: italic;
+                font-weight: lighter;
+            }
+            .author{
+                margin-top: 10px;
+                display: flex;
+                .line{
+                    margin: 20px 10px 0 0;
+                }
+                p{
+                    font-family: 'Kaushan Script', cursive;
+                    font-size: 24px;
+                    color: $lite-black;
+                }
+            }
+        }
+    }
+    
+    .owl-prev, .owl-next{
+        position: absolute;
+        top: 43%;
+        transform: translateY(-50%);
+        color: $grey !important;
+        font-size: 60px !important;
+    }
+    .owl-prev:hover, .owl-next:hover{
+        background: none !important;
+        color: $paste !important;
+        border: none !important;
+    }
+    .owl-prev span, .owl-next span{
+        border: none !important;
+    }
+    .owl-prev{
+        left: 0%;
+    }
+    .owl-next{
+        right: 0%;
+    }
+}
+
+.what-we-do-section{
+    padding: 100px 0;
+    .line{
+        margin: 40px auto;
+    }
+    .upper-portion{
+        margin-bottom: 90px;
+        padding: 0 80px;
+    }
+    .card{
+        border-radius: 0;
+        margin-bottom: 10px;
+        .card-header{
+            background-color: transparent;
+            padding: 5px 15px 5px 0;
+            margin: 0;
+        }
+        .card-body{
+            height: 190px;
+            font-weight: 300;
+            overflow-y: scroll;
+            margin-right: 10px;
+        }
+
+        //--------scrollbar effect-------------
+        ::-webkit-scrollbar {
+            width: 3px;
+            padding-top: 30px;
+        }
+          ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            height: 85px !important;
+        }
+          ::-webkit-scrollbar-thumb {
+            background: $paste;            
+        }
+        //--------scrollbar effect-------------
+          
+        .button{
+            width: 100%;
+            height: 60px;        
+        }
+        .button:hover{  
+            text-decoration: none !important;
+        }
+        .btn-link{
+            a{
+                color: $lite-black;
+                text-transform: uppercase;
+                font-weight: 400;
+                text-decoration: none !important;
+                position: absolute;
+                top: 17px;
+            }
+            i{
+                font-size: 30px;
+                color: $paste;
+                margin-right: 15px;
+            }
+        }
+        .btn-link::after{
+            content: '˅';
+            font-size: 25px;
+            right: 25px;
+            top: 11px;
+            position: absolute;
+            color: $grey;
+        }
+        .btn-link.collapsed::after{
+            content: '˄';
+        }
+    }
+}
+
+.design-section{
+    padding: 100px 0 0;
+    background:linear-gradient(0deg, rgba(240, 240, 239, 0.8) 27%, rgba(255, 251, 251, 0.8) 68%),url('../images/feature-background.jpg')  no-repeat center center;
+    
+    .line{
+        margin: 40px auto;
+    }
+    .overlap-mobile{
+        margin: 0 auto;
+        display: flex;
+        position: relative;
+        .image-1{
+           padding-left: 300px;
+           max-width: 100%;
+           position: relative;
+        }
+
+        // .image-1{
+        //     left: 20%;
+        //     position: absolute;
+        //     bottom: 0;;
+        // }
+        .image-2{
+           position: absolute;
+           right: 23%;
+           top: 34%;
+           max-width: 100%;
+        }
+    }
+}
+
+.team-section{
+    .hover-text{
+        left: 45% !important;
+        .icon{
+            i{
+                height: 60px;
+                width: 60px;
+                background: $yellow;
+                color: $onion !important;
+                font-size: 25px;
+                line-height: 60px;
+                border: 1px solid $onion !important;
+            }
+            i:hover{
+                background: $onion;
+                color: $white !important;
+            }
+        }
+    }
+    .identity{
+        margin: 30px auto 0;
+    }
+}
+
+.icon-section{
+    background: $section-background;
+    padding: 55px 0;
+}
+
+.work-gallery{
+    padding: 110px 0 0;
+    .upper-portion{
+        padding: 0 110px;
+        margin-bottom: 100px;
+    }
+    .line{
+        margin: 40px auto;
+    }
+    .grid{
+        .portfolio{
+            width: 100%;
+            img{
+                max-width: 100%;
+            }
+            .hover-text{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                opacity: 0;
+                transform: translate(-50%, -50%);
+                i{
+                    color: #fff;
+                    font-size: 35px;
+                }
+                p{
+                    color: $white;
+                }
+            } 
+            .thin-card-title{
+                font-weight: 400 !important; 
+                font-size: 14px;
+                margin: 15px 0 10px;
+            }
+            .roboto-italic{
+                font-weight: 300 !important;
+                font-size: 15px;
+                text-transform: none !important;
+            }
+        }
+
+        .portfolio:hover{
+            background: linear-gradient(0deg, rgba(238,215,138,0.9) 27%, rgba(232,129,131,0.9) 58%);
+            cursor: pointer;
+            img{
+                opacity: 0.2;
+            }
+            .hover-text{
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.testimonial-quote-section{
+    background: $white !important;
+}
+
+.happy-clients-section{
+    padding: 100px 0 30px;
+    background:linear-gradient(0deg, rgba(240, 240, 239, 0.8) 27%, rgba(255, 251, 251, 0.8) 68%),url('../images/client.jpg') no-repeat center center;
+    background-size: cover;
+    .upper-line{
+        margin: 40px auto 80px;
+    }
+    .image-content{
+        margin-bottom: 70px;
+        padding-right: 0px;
+        .thin-card-title{
+            margin-bottom: 10px;
+        }
+        .image-line{
+            margin: 15px 0 20px;
+        }
+    }
+}
+
+.blog-section{
+    padding: 110px 0;
+    .line{
+        margin: 40px auto 45px;
+    }
+    .card{
+        border: none;
+        img{
+            position: relative;
+        }
+        .date-box{
+            background: $paste;
+            height: 70px;
+            width: 60px;
+            text-align: center;
+            position: absolute;
+            top: 140px;
+            left: -10px;
+            p{
+                color: $white;
+            }
+            .bold-text{
+                font-size: 30px;
+                font-weight: bold;
+                font-family: 'Montserrat', sans-serif;
+                color: $white;
+            }
+        }
+        .card-body{
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+            .thin-card-title{
+                margin-bottom: 15px;
+            }
+            p{
+                i{
+                    color: $paste;
+                }
+                span{
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+    
+}
+
+.map-section{
+    background:linear-gradient(0deg, rgba(240, 240, 239, 0.8) 27%, rgba(255, 251, 251, 0.8) 68%),url('../images/map.jpg') no-repeat center center;
+    padding: 50px 0 30px;
+    .line{
+        margin: 20px auto;
+    }
+    i{
+        margin-bottom: 10px;
+        color: $onion;
+        font-size: 30px;
+    }
+    .map-text{
+        color: $onion;
+        font-size: 24px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+}
+
+footer{
+    padding: 70px 0;
+    background: $section-background;
+    h2{
+        margin-bottom: 30px;
+        color: #e3e3e3;
+        font-size: 46px;
+    }
+    .content{
+        margin-bottom: 30px;
+    }
+    .followers{
+        margin-top: 30px;
+        span{
+            text-transform: lowercase;
+
+        }
+    }
+    .form-control{
+        padding: 19px 15px !important;
+    }
+    .input-group{
+        margin-top: 30px;
+        button{
+            height: 40px !important;
+            background: $paste;
+            color: $white;
+            border: none;
+            font-weight: bold !important;
+        }
+    }
+    .icons{
+        i{
+            font-size: 20px;
+            color: $paste;
+            margin-left: 15px;
+        }
+    }
+    .bold{
+        margin-bottom: 40px;
+    }
+    .blog{
+        .thin{
+            font-size: 12px;
+            margin: 0px 0 5px;
+        }
+        .small{
+            font-size: 13px;
+        }
+        .image{
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .instagram{
+        .image{
+            width: 100%;
+            padding: 1px;
+            height: 100%;
+            img{
+                width: 100%;
+                height: 100%;;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1199px){
+    header{
+        .banner{
+            h1 {
+                font-size: 110px;
+                line-height: 100px;
+            } 
+            h4{
+                font-size: 52px;
+            }
+        } 
+        nav{
+            li {
+                margin-right: 20px !important;
+            }
+        }
+    }
+    .card{
+        margin-bottom: 30px;
+    }
+    .team-section{
+        .team{
+            margin-bottom: 30px;;
+        }
+    }
+    .design-section{
+        .overlap-mobile{
+            .image-1{
+               padding-left: 180px;
+               max-width: 100%;
+            }
+            .image-2{
+               position: absolute;
+               right: 12%;
+               top: 34%;
+               max-width: 100%;
+            }
+        }
+    }
+    .blog-section{
+        .date-box{
+            top: 100px !important;
+            left: -10px;
+        }
+    }
+    .quote-section, .testimonial-quote-section{
+        .content {
+            padding: 0 px 0;
+        }
+        .box{
+            width: 120px !important;
+            height: 150px !important;
+        }
+    }
+    footer{
+        .content{
+            margin-bottom: 41px;
+        }
+        .blog{
+            .thin {
+                font-size: 12px;
+                margin: 0px 0 5px;
+            }
+        } 
+    }
+}
+
+@media screen and (max-width: 991px){
+    header{
+        .banner{
+            h1 {
+                font-size: 90px;
+                line-height: 90px;
+            } 
+            h4{
+                font-size: 45px;
+            }
+        } 
+        .navbar-collapse{
+            padding-left: 20px;
+             li{
+                 margin-bottom: 15px;
+             }
+         }
+    }
+    .about-section, .team-section, .work-gallery, .what-we-do-section{
+        .upper-portion {
+            padding: 0 0px;
+            margin-bottom: 50px;
+        }
+    } 
+   .service-section{
+        .upper-portion{
+            margin-bottom: 0px !important;
+        }
+        .per-content{
+            text-align: center;
+            margin: 20px 0 !important;
+            i, svg{
+                margin-bottom: 10px !important;
+            }
+        }
+        .content{
+            p{
+                margin-top: 10px;
+            }
+        }
+    }
+    .quote-section, .testimonial-quote-section{
+        .content{
+            padding: 0 35px 0;
+            .text{
+                margin: 10px 0 0 30px !important;
+            }
+            .text p{
+                font-size: 18px;
+            }
+            .text .author {
+                .line {
+                    margin: 13px 10px 0 0;
+                }
+                p{
+                    font-size: 18px;
+                }
+            }
+        }
+    } 
+    .icon-section{
+        img{
+            margin-bottom: 20px;
+        }
+        text-align: center;
+    }
+    .testimonial-quote-section{
+        .content{
+            .image{
+                width: 120px !important;
+                height: 120px !important;
+            }
+            .text{
+                margin-top: 20px !important;
+            }
+        }
+    }
+    .design-section{
+        .overlap-mobile{
+            .image-1{
+               padding-left: 120px;
+               width: 450px !important;
+               img{
+                   width: 100%;
+               }
+            }
+            .image-2{
+               width: 220px;
+               height: 380px !important;
+               img{
+                   width: 100%;
+                   height: 100%;
+               }
+               position: absolute;
+               right: 17%;
+               top: 25%;
+               max-width: 100%;
+            }
+        }
+    }
+    .testimonial-quote-section{
+        .image{
+            margin-top: 20px;
+        }
+    }
+    .counter-section{
+        .border-col{
+            margin-bottom: 40px;
+        }
+    }
+    .happy-clients-section{
+        .image-content{
+            img{
+                height: 80px;
+                width: 80px;
+            }
+        }
+    }
+    .what-we-do-section{
+        .image-card{
+            margin-bottom: 30px;
+        }
+    }
+    .blog-section{
+        .date-box{
+            top: 127px !important;
+            left: -10px;
+        }
+    }
+    footer{
+        .per-content{
+            margin-bottom: 30px;
+        }
+        .content {
+            margin-bottom: 33px;
+        }
+    }
+    .counter-section h2 {
+        font-size: 52px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .line{
+        margin: 20px auto !important;
+    }
+    header{
+        .banner{
+            padding: 100px 0;
+            h1 {
+                font-size: 70px;
+                line-height: 70px;
+            } 
+            h4{
+                font-size: 35px;
+            }
+        } 
+    }
+    .about-section, .service-section, .design-section, .team-section, .happy-clients-section,
+    .blog-section, footer, .counter-section{
+        padding: 50px 0;
+    }
+    .what-we-do-section{
+        padding-bottom: 50px;
+    }
+    .work-gallery{
+        padding-top: 50px;
+    }
+    .about-section, .team-section, .work-gallery, .what-we-do-section{
+        .upper-portion {
+            padding: 0 0px;
+            margin-bottom: 50px;
+        }
+    } 
+
+    .quote-section, .testimonial-quote-section{
+        text-align: center;
+        .box, .image{
+            margin: 10px auto;
+        }
+        .author{
+            padding-left: 30%;
+        }
+    }
+   .service-section{
+        .upper-portion{
+            margin-bottom: 0px !important;
+        }
+    }
+    .design-section{
+        .overlap-mobile{
+            .image-1{
+                padding-left: 74px;
+                width: 388px !important;
+                margin-bottom: -50px;
+               img{
+                   width: 100%;
+               }
+            }
+            .image-2{
+                width: 200px;
+                height: 331px !important;
+                right: 1%;
+                top: 36%;
+            }
+        }
+    }
+    .icon-section{
+        text-align: center;
+    }
+    .quote-section, .testimonial-quote-section{
+        padding: 30px 0;
+        .text{
+            p{
+                margin-left: -20px;
+                font-size: 14px;
+            }
+        } 
+        .content{
+            .box, .image{
+                width: 65px !important;
+                height: 65px !important;
+                line-height: 65px;
+                i{
+                    font-size: 30px;
+                }
+            }
+            .box{
+                margin-top: 20px;
+            }
+        }
+    } 
+    .testimonial-quote-section{
+        .image{
+            margin-top: 20px;
+        }
+    }
+    .quote-line{
+        margin: 12px 24px 0 0;
+    }
+    .happy-clients-section{
+        .upper-portion{
+            margin-bottom: 50px;
+        }
+        .image-line{
+            margin: 7px 0 !important;
+        }
+        .image-content{
+            img{
+                height: 80px;
+                width: 80px;
+            }
+            margin-bottom: 35px;
+        }
+
+    }
+    .blog-section{
+        .date-box{
+            top: 240px !important;
+            left: -10px;
+        }
+    }
+}
+
+@media screen and (max-width: 575px){
+    .section-title {
+        font-size: 24px;
+    }
+    .signature-title {
+        font-size: 16px;
+    }
+    header{
+        .banner{
+            padding: 70px 0;
+            h1 {
+                font-size: 50px;
+                line-height: 50px;
+            } 
+            h4{
+                font-size: 25px;
+            }
+            button {
+                padding: 4px 15px;
+            }
+        } 
+    }
+    .design-section{
+        .overlap-mobile{
+            .image-1{
+                padding-left: 74px;
+                width: 350px !important;
+            }
+            .image-2{
+                width: 180px !important;
+                height: 295px !important;
+                right: 10% !important;
+                top: 36%;
+            }
+        }
+    }
+    .icon-section{
+        text-align: center;
+        padding-left: 0;
+    }
+    .testimonial-quote-section, .quote-section{
+        .box, .image{
+            height: 50px !important;
+            width: 50px !important;
+            line-height: 50px;
+            i{
+                font-size: 24px;
+            }
+        }
+        .text{
+            p{
+                font-size: 16px !important;
+            }
+        }
+    }
+    .happy-clients-section{
+        img{
+            margin-bottom: 10px;
+        }
+        .image-line{
+            margin: 7px auto !important;
+        }
+        .image-content{
+            text-align: center;
+        }
+    }
+    .blog-section{
+        .date-box{
+            top: 230px !important;
+            left: -10px;
+        }
+    }
+    .about-section, .service-section, .what-we-do-section, .team-section, .happy-clients-section,
+     footer{
+        padding: 50px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .design-section{
+        .overlap-mobile{
+            .image-1{
+                padding-left: 84px;
+                width: 280px !important;
+                margin-bottom: -50px;
+            }
+            .image-2{
+                width: 120px !important;
+                height: 215px !important;
+                left: 55%;
+                top: 36%;
+            }
+        }
+    }
+    .blog-section{
+        .date-box{
+            top: 160px !important;
+            left: -10px;
+        }
+    }
+    .testimonial-quote-section, .quote-section{
+        .box, .image{
+            height: 40px !important;
+            width: 40px !important;
+            line-height: 40px;
+        }
+    }
+    footer .icons i {
+        font-size: 16px;
+        color: #95e1d3;
+        margin-left: 7px;
+    }
+}
+@media screen and (max-width: 420px){
+    .section-title {
+        font-size: 20px;
+    }
+    .signature-title {
+        font-size: 12px;
+    }
+    header{
+        .banner{
+            padding: 70px 0;
+            h1 {
+                font-size: 40px;
+                line-height: 40px;
+            } 
+            h4{
+                font-size: 18px;
+            }
+            button {
+                padding: 4px 15px;
+            }
+        } 
+    }
+    .quote-line, .testimonial-quote-section{
+        .author{
+            padding-left: 20% !important;
+        }
+    }
+    .blog-section{
+        .date-box{
+            top: 90px !important;
+            left: -10px;
+        }
+    }
+    .design-section{
+        .overlap-mobile{
+            .image-1{
+                padding-left: 44px;
+                width: 235px !important;
+            }
+        }
+    }
+    .about-section, .service-section, .what-we-do-section, .team-section, .happy-clients-section,
+    .blog-section, footer{
+        padding: 50px 10px;
+    }
+}
