@@ -61,6 +61,7 @@ a:hover {
 .bgcolor.scrolled {
   background: -webkit-gradient(linear, left top, right top, color-stop(19%, #de4882), to(#e8785d));
   background: linear-gradient(90deg, #de4882 19%, #e8785d 100%);
+  padding-bottom: 20px;
   opacity: 1;
 }
 
@@ -129,7 +130,7 @@ header nav li .input {
 }
 
 header nav li .input-open {
-  margin-top: 3px;
+  margin-top: 0px;
   border-radius: 20px;
   border: 2px solid #fce38a;
   outline: none;
@@ -141,7 +142,7 @@ header nav li .input-open {
 }
 
 header .banner {
-  padding: 150px 0 220px;
+  padding: 230px 0;
 }
 
 header .banner h1, header .banner h4 {
@@ -184,7 +185,7 @@ header .banner button a {
 }
 
 .about-section, .team-section {
-  padding: 100px 0;
+  padding: 90px 0;
 }
 
 .about-section .upper-portion, .team-section .upper-portion {
@@ -271,7 +272,7 @@ header .banner button a {
 }
 
 .service-section {
-  padding: 100px 0 50px;
+  padding: 110px 0 10px;
 }
 
 .service-section .line {
@@ -279,7 +280,7 @@ header .banner button a {
 }
 
 .service-section .content .per-content {
-  margin: 50px 0;
+  margin: 0px 0 100px;
 }
 
 .service-section .content .thin-line {
@@ -306,17 +307,17 @@ header .banner button a {
 
 .quote-section, .testimonial-quote-section {
   background: #f8f8f8;
-  padding: 60px 0;
+  padding: 65px 0;
 }
 
 .quote-section .content, .testimonial-quote-section .content {
-  padding: 0 65px 0;
+  padding: 0 70px 0;
 }
 
 .quote-section .content .box, .testimonial-quote-section .content .box {
-  width: 145px;
+  width: 150px;
   height: 150px;
-  line-height: 160px;
+  line-height: 170px;
   text-align: center;
   border: 2px solid #95e1d3;
 }
@@ -340,8 +341,8 @@ header .banner button a {
   display: flex;
 }
 
-.quote-section .content .text .author .line, .testimonial-quote-section .content .text .author .line {
-  margin: 20px 10px 0 0;
+.quote-section .content .text .author .quote-line, .testimonial-quote-section .content .text .author .quote-line {
+  margin: 20px 20px 0 0;
 }
 
 .quote-section .content .text .author p, .testimonial-quote-section .content .text .author p {
@@ -485,7 +486,7 @@ header .banner button a {
 
 .design-section .overlap-mobile .image-2 {
   position: absolute;
-  right: 23%;
+  right: 15%;
   top: 34%;
   max-width: 100%;
 }
@@ -584,6 +585,7 @@ header .banner button a {
 }
 
 .testimonial-quote-section {
+  padding: 90px 0 !important;
   background: #fff !important;
 }
 
@@ -646,6 +648,8 @@ header .banner button a {
   font-weight: bold;
   font-family: 'Montserrat', sans-serif;
   color: #fff;
+  margin-top: 15px;
+  line-height: 25px;
 }
 
 .blog-section .card .card-body {
@@ -659,10 +663,12 @@ header .banner button a {
 
 .blog-section .card .card-body p i {
   color: #95e1d3;
+  margin-right: 5px;
+  font-size: 20px;
 }
 
 .blog-section .card .card-body p span {
-  margin-right: 15px;
+  margin-right: 20px;
 }
 
 .map-section {
@@ -705,7 +711,7 @@ footer .content {
 }
 
 footer .followers {
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 footer .followers span {
@@ -717,7 +723,7 @@ footer .form-control {
 }
 
 footer .input-group {
-  margin-top: 30px;
+  margin-top: 35px;
 }
 
 footer .input-group button {
@@ -748,18 +754,34 @@ footer .blog .small {
 }
 
 footer .blog .image img {
-  width: 100%;
+  max-width: 100%;
 }
 
 footer .instagram .image {
-  width: 100%;
-  padding: 1px;
-  height: 100%;
+  max-width: 100%;
+  padding: 1px !important;
 }
 
 footer .instagram .image img {
   width: 100%;
-  height: 100%;
+}
+
+footer .instagram p {
+  margin-top: 20px;
+}
+
+.copyright {
+  padding: 25px 0;
+  background: #f8f8f8;
+}
+
+.copyright p {
+  font-size: 14px;
+  color: #1f1f1f;
+}
+
+.copyright hr {
+  padding-top: 10px;
 }
 
 @media screen and (max-width: 1199px) {
@@ -818,6 +840,8 @@ footer .instagram .image img {
     font-size: 45px;
   }
   header .navbar-collapse {
+    background: -webkit-gradient(linear, left top, right top, color-stop(19%, #de4882), to(#e8785d));
+    background: linear-gradient(90deg, #de4882 19%, #e8785d 100%);
     padding-left: 20px;
   }
   header .navbar-collapse li {
@@ -849,7 +873,7 @@ footer .instagram .image img {
   .quote-section .content .text p, .testimonial-quote-section .content .text p {
     font-size: 18px;
   }
-  .quote-section .content .text .author .line, .testimonial-quote-section .content .text .author .line {
+  .quote-section .content .text .author .quote-line, .testimonial-quote-section .content .text .author .quote-line {
     margin: 13px 10px 0 0;
   }
   .quote-section .content .text .author p, .testimonial-quote-section .content .text .author p {
@@ -951,6 +975,12 @@ footer .instagram .image img {
   }
   .quote-section .author, .testimonial-quote-section .author {
     padding-left: 30%;
+  }
+  .quote-section .author .quote-line, .testimonial-quote-section .author .quote-line {
+    margin-right: 30px !important;
+  }
+  .testimonial-quote-section {
+    padding: 50px 0 !important;
   }
   .service-section .upper-portion {
     margin-bottom: 0px !important;

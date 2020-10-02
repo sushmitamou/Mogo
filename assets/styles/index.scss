@@ -59,12 +59,14 @@ a:hover{
 .bgcolor.scrolled {
     background: -webkit-gradient(linear, left top, right top, color-stop(19%, #de4882), to(#e8785d));
     background: linear-gradient(90deg, #de4882 19%, #e8785d 100%);
+    padding-bottom: 20px;
     opacity: 1;
   }
 header{
     background: linear-gradient(0deg, rgba(247, 222, 141, 0.9) 27%, rgba(232, 129, 131, 0.9) 68%),url('../images/banner.jpg')  no-repeat center center;
     background-size: cover;
     width: 100%;
+
     nav{
         padding-top: 30px;
         .logo{
@@ -112,7 +114,7 @@ header{
            // margin-right: -12px;
         }
         li .input-open{
-            margin-top: 3px;
+            margin-top: 0px;
             border-radius: 20px;
             border: 2px solid $yellow;
             outline: none;
@@ -127,7 +129,7 @@ header{
         h1, h4{
             color: #fff;
         }
-        padding: 150px 0 220px;
+        padding: 230px 0;
         h1{
             font-family: 'Montserrat', sans-serif;
             font-size: 150px;
@@ -162,7 +164,7 @@ header{
 }
 
 .about-section, .team-section{
-    padding: 100px 0;
+    padding: 90px 0;
     .upper-portion{
         padding: 0 110px;
         margin-bottom: 80px;
@@ -233,13 +235,13 @@ header{
 }
 
 .service-section{
-    padding: 100px 0 50px;
+    padding: 110px 0 10px;
     .line{
         margin: 40px auto 60px;
     }
     .content{
         .per-content{
-            margin: 50px 0;
+            margin: 0px 0 100px;
         }
         .thin-line{
             height: 1px;
@@ -264,13 +266,13 @@ header{
 
 .quote-section, .testimonial-quote-section{
     background: $section-background;
-    padding: 60px 0;
+    padding: 65px 0;
     .content{
-        padding: 0 65px 0;
+        padding: 0 70px 0;
         .box{
-            width: 145px;
+            width: 150px;
             height: 150px;
-            line-height: 160px;
+            line-height: 170px;
             text-align: center;
             border: 2px solid $paste;
             i{
@@ -288,8 +290,8 @@ header{
             .author{
                 margin-top: 10px;
                 display: flex;
-                .line{
-                    margin: 20px 10px 0 0;
+                .quote-line{
+                    margin: 20px 20px 0 0;
                 }
                 p{
                     font-family: 'Kaushan Script', cursive;
@@ -413,15 +415,9 @@ header{
            max-width: 100%;
            position: relative;
         }
-
-        // .image-1{
-        //     left: 20%;
-        //     position: absolute;
-        //     bottom: 0;;
-        // }
         .image-2{
            position: absolute;
-           right: 23%;
+           right: 15%;
            top: 34%;
            max-width: 100%;
         }
@@ -512,6 +508,7 @@ header{
 }
 
 .testimonial-quote-section{
+    padding: 90px 0 !important;
     background: $white !important;
 }
 
@@ -560,6 +557,8 @@ header{
                 font-weight: bold;
                 font-family: 'Montserrat', sans-serif;
                 color: $white;
+                margin-top: 15px;
+                line-height: 25px;
             }
         }
         .card-body{
@@ -571,9 +570,11 @@ header{
             p{
                 i{
                     color: $paste;
+                    margin-right: 5px;
+                    font-size: 20px;
                 }
                 span{
-                    margin-right: 15px;
+                    margin-right: 20px;
                 }
             }
         }
@@ -613,7 +614,7 @@ footer{
         margin-bottom: 30px;
     }
     .followers{
-        margin-top: 30px;
+        margin-top: 50px;
         span{
             text-transform: lowercase;
 
@@ -623,7 +624,7 @@ footer{
         padding: 19px 15px !important;
     }
     .input-group{
-        margin-top: 30px;
+        margin-top: 35px;
         button{
             height: 40px !important;
             background: $paste;
@@ -652,20 +653,32 @@ footer{
         }
         .image{
             img{
-                width: 100%;
+                max-width: 100%;
             }
         }
     }
     .instagram{
         .image{
-            width: 100%;
-            padding: 1px;
-            height: 100%;
-            img{
-                width: 100%;
-                height: 100%;;
-            }
+            max-width: 100%;
+            padding: 1px !important;
+           img{
+               width: 100%;
+           }
         }
+        p{
+            margin-top: 20px;
+        }
+    }
+}
+.copyright{
+    padding: 25px 0;
+    background: $section-background;
+    p{
+        font-size: 14px;
+        color: $lite-black;
+    }
+    hr{
+        padding-top: 10px;
     }
 }
 
@@ -748,6 +761,7 @@ footer{
             }
         } 
         .navbar-collapse{
+            background: linear-gradient(90deg, #de4882 19%, #e8785d 100%);
             padding-left: 20px;
              li{
                  margin-bottom: 15px;
@@ -787,7 +801,7 @@ footer{
                 font-size: 18px;
             }
             .text .author {
-                .line {
+                .quote-line {
                     margin: 13px 10px 0 0;
                 }
                 p{
@@ -918,7 +932,13 @@ footer{
         }
         .author{
             padding-left: 30%;
+            .quote-line{
+                margin-right: 30px !important;
+            }
         }
+    }
+    .testimonial-quote-section{
+        padding: 50px 0 !important;
     }
    .service-section{
         .upper-portion{
